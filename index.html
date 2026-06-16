@@ -4,9 +4,117 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Art of Discernment · A Masterclass on Healing Through Poetry</title>
-<meta name="description" content="A two-hour live masterclass with Sonali Dutta on healing through poetry and the art of discernment — learning when to yield, when to stand, and when to walk away. Sunday 7 June 2026, 4 PM IST.">
+<meta name="description" content="A two-hour live masterclass with Sonali Dutta on healing through poetry and the art of discernment — learning when to yield, when to stand, and when to walk away.">
 <link rel="stylesheet" href="styles.css">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext x='16' y='22' text-anchor='middle' font-size='22' fill='%23d4a04a'%3E✦%3C/text%3E%3C/svg%3E">
+
+<!-- ═════════════════════════════════════════════════════════════════════
+     ✦ EDIT THIS BLOCK FOR EACH MASTERCLASS ✦
+     Change the date, time, fee, or registration URL here.
+     All the dates/times in the page below will update automatically.
+     ═════════════════════════════════════════════════════════════════════ -->
+<script>
+  window.MASTERCLASS = {
+    dateDisplay: "Sunday, 21 June 2026",       // shown in meta band & registration block
+    dateShort:   "21 June",                    // shown in "before [date]" line
+    eyebrowDate: "Sunday 21 June 2026",        // shown in the hero eyebrow
+    timeIST:     "4:00 PM IST",
+    duration:    "2 hours, live",
+    fee:         "₹99",
+    registrationUrl: "https://forms.gle/UzGeWhkyiQmq1jHg9"
+  };
+</script>
+
+<!-- Small style additions for the testimonials section.
+     Uses your existing palette variables; safely no-op if any are missing. -->
+<style>
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg, 1.5rem);
+    margin: var(--space-xl, 2.5rem) 0;
+  }
+  @media (max-width: 780px) {
+    .testimonials-grid { grid-template-columns: 1fr; }
+  }
+  .testimonial {
+    background: var(--ink-deep, #181410);
+    border: 0.5px solid var(--parchment-whisper, rgba(245,235,216,0.18));
+    border-left: 2px solid var(--saffron, #d4a04a);
+    border-radius: 3px;
+    padding: var(--space-lg, 1.5rem);
+    display: flex;
+    flex-direction: column;
+  }
+  .testimonial-quote {
+    font-family: var(--font-body, 'Spectral', Georgia, serif);
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.02rem;
+    line-height: 1.7;
+    color: var(--parchment-soft, rgba(245,235,216,0.72));
+    flex-grow: 1;
+    white-space: pre-line;
+  }
+  .testimonial-quote::before {
+    content: '\201C';
+    font-family: var(--font-display, 'Cormorant Garamond', serif);
+    font-style: normal;
+    color: var(--saffron, #d4a04a);
+    font-size: 2.4rem;
+    line-height: 0;
+    margin-right: 4px;
+    vertical-align: -0.45em;
+  }
+  .testimonial-attribution {
+    margin-top: var(--space-md, 1rem);
+    padding-top: var(--space-sm, 0.75rem);
+    border-top: 0.5px dotted var(--parchment-whisper, rgba(245,235,216,0.18));
+    font-family: var(--font-ui, 'Inter Tight', system-ui, sans-serif);
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--saffron, #d4a04a);
+    text-align: right;
+  }
+  .testimonial-poem {
+    background: var(--ink-deep, #181410);
+    border: 0.5px solid var(--saffron, #d4a04a);
+    border-radius: 3px;
+    padding: var(--space-lg, 1.5rem);
+    margin-top: var(--space-lg, 1.5rem);
+    text-align: center;
+  }
+  .testimonial-poem-intro {
+    font-family: var(--font-display, 'Cormorant Garamond', serif);
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--parchment-soft, rgba(245,235,216,0.72));
+    margin-bottom: var(--space-md, 1rem);
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.55;
+  }
+  .testimonial-poem-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 3px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.35);
+    display: block;
+    margin: 0 auto;
+  }
+  .testimonial-poem-attribution {
+    margin-top: var(--space-md, 1rem);
+    font-family: var(--font-ui, 'Inter Tight', system-ui, sans-serif);
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--saffron, #d4a04a);
+  }
+</style>
 </head>
 <body>
 <div class="page">
@@ -16,13 +124,14 @@
   <div class="masthead-title"><a href="index.html">Sonali's Poetry Space</a></div>
   <nav class="masthead-nav">
     <a href="#what">The Masterclass</a>
+    <a href="#testimonials">From Participants</a>
     <a href="#register">Register</a>
   </nav>
 </header>
 
 <!-- HERO -->
 <section class="reveal">
-  <span class="eyebrow">A Live Masterclass · Sunday 7 June 2026</span>
+  <span class="eyebrow">A Live Masterclass · <span data-mc="eyebrowDate">Sunday 21 June 2026</span></span>
   <h1 class="display">The Art of <em>Discernment</em></h1>
   <div class="subtitle">Healing Through Poetry</div>
   <p class="lede" style="margin-top: var(--space-lg);">
@@ -30,10 +139,10 @@
   </p>
 
   <div class="meta-band">
-    <div class="meta-item">Date<strong>Sunday, 7 June 2026</strong></div>
-    <div class="meta-item">Time<strong>4:00 PM IST</strong></div>
-    <div class="meta-item">Duration<strong>2 hours, live</strong></div>
-    <div class="meta-item">Fee<strong>₹99</strong></div>
+    <div class="meta-item">Date<strong data-mc="dateDisplay">Sunday, 21 June 2026</strong></div>
+    <div class="meta-item">Time<strong data-mc="timeIST">4:00 PM IST</strong></div>
+    <div class="meta-item">Duration<strong data-mc="duration">2 hours, live</strong></div>
+    <div class="meta-item">Fee<strong data-mc="fee">₹99</strong></div>
   </div>
 </section>
 
@@ -125,25 +234,85 @@
 
 <hr class="rule">
 
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="section">
+  <div class="container-text" style="text-align:center;">
+    <span class="eyebrow" style="justify-content:center;">From those who came</span>
+    <h2 class="section-title" style="text-align:center;">What past <em>participants</em> say</h2>
+    <p class="body-text" style="text-align:center; margin: 0 auto var(--space-md);">
+      Words from poets, professionals, and seekers who sat in the room of the previous masterclass.
+    </p>
+  </div>
+
+  <div class="testimonials-grid">
+
+    <!-- ABHISHEK -->
+    <div class="testimonial">
+      <div class="testimonial-quote">The masterclass helped me appreciate the depth hidden in poetry. It made me realise that a few lines of poetry, when understood deeply, are better than reading 100 books.</div>
+      <div class="testimonial-attribution">— Abhishek</div>
+    </div>
+
+    <!-- DEBJANI -->
+    <div class="testimonial">
+      <div class="testimonial-quote">The poetry class was an enriching and deeply engaging experience. What made it truly special was the way Sonali explained every line of the poem with remarkable clarity and insight. Each verse was carefully unpacked, helping participants understand not only the literal meaning but also the emotions, symbolism, and deeper message behind the poet's words.
+
+Sonali's thoughtful interpretation brought the poem to life and made even complex lines easy to appreciate. The session encouraged a deeper connection with poetry and offered a fresh perspective on literary expression. It was an enlightening experience for both poetry enthusiasts and beginners alike.
+
+A truly memorable session that transformed reading poetry into a meaningful journey of understanding and reflection. And ice on the cake was Sonali's own poem in continuation to the original one…</div>
+      <div class="testimonial-attribution">— Debjani Deb</div>
+    </div>
+
+    <!-- DSR -->
+    <div class="testimonial">
+      <div class="testimonial-quote">I joined Sonali's Masterclass on Poetry. For me, it has been a delightful experience that helped me understand the depth and range of emotions that can be expressed through poetry.
+
+I feel that expressing emotions comes more naturally when you can write them down and transform them into an art form.
+
+Thank you, Sonali, for providing such an extensive and enriching masterclass. I look forward to joining the main course.</div>
+      <div class="testimonial-attribution">— DSR</div>
+    </div>
+
+    <!-- SUBRAMANIAN -->
+    <div class="testimonial">
+      <div class="testimonial-quote">Yesterday's Masterclass was like a homecoming. Brought back those nostalgic moments when attending your space. Could travel with you till the end of Keats's poem. But after hearing your counter poem, it was like the train got derailed. What we understood with that fast reading was shattered when you said we were completely off the mark. Even after reading your poem today, feel to be in the wilderness. You could have accommodated the discussion on your poem within the schedule time, as you usually do in the spaces. Akka, one suggestion, can we have a small session exclusively to discuss your poem. Because I think we have crossed half the well. Moreover, the major part of the journey of healing is yet to happen.</div>
+      <div class="testimonial-attribution">— Subramanian Swamy</div>
+    </div>
+
+  </div>
+
+  <!-- SUTIRTHA'S POEM AS FEATURED TRIBUTE -->
+  <div class="container-text">
+    <div class="testimonial-poem">
+      <p class="testimonial-poem-intro">
+        One participant was so moved that she wrote her feedback as a poem.
+      </p>
+      <img class="testimonial-poem-image" src="sutirtha-feedback.jpeg" alt="A feedback poem written and dedicated by participant Sutirtha Mondal after the masterclass.">
+      <div class="testimonial-poem-attribution">— Sutirtha Mondal</div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
 <!-- REGISTER -->
 <section id="register" class="section container-text">
   <div class="cta-block">
     <span class="eyebrow" style="justify-content:center;">Reserve your place</span>
-    <div class="cta-price">₹99 <small>· two hours, live</small></div>
+    <div class="cta-price"><span data-mc="fee">₹99</span> <small>· <span data-mc="duration">two hours, live</span></small></div>
     <p class="body-text" style="margin: var(--space-md) 0 var(--space-lg); text-align:center;">
-      Sunday, 7 June 2026 · 4:00 PM IST · live online<br>
+      <span data-mc="dateDisplay">Sunday, 21 June 2026</span> · <span data-mc="timeIST">4:00 PM IST</span> · live online<br>
       Limited seats, to keep the room intimate.
     </p>
-    <a class="btn btn-primary" href="https://forms.gle/UzGeWhkyiQmq1jHg9" target="_blank" rel="noopener">Register for the masterclass</a>
+    <a class="btn btn-primary" data-mc-attr="href:registrationUrl" href="https://forms.gle/UzGeWhkyiQmq1jHg9" target="_blank" rel="noopener">Register for the masterclass</a>
   </div>
 
   <div class="body-text">
     <p style="font-size: 0.95rem; color: var(--parchment-faint);">
-      <strong style="color:var(--parchment-soft);">How to register:</strong> Pay ₹99 to the UPI ID below, then fill the registration form with your name, email, and the payment transaction ID. Once your payment is confirmed, you will receive the live session link by email before 7 June.
+      <strong style="color:var(--parchment-soft);">How to register:</strong> Pay <span data-mc="fee">₹99</span> to the UPI ID below, then fill the registration form with your name, email, and the payment transaction ID. Once your payment is confirmed, you will receive the live session link by email before <span data-mc="dateShort">21 June</span>.
     </p>
     <p style="font-size: 0.95rem; color: var(--parchment-faint);">
       <strong style="color:var(--parchment-soft);">UPI ID for payment:</strong> sonaliijec@okhdfcbank<br>
-      <strong style="color:var(--parchment-soft);">Amount:</strong> ₹99
+      <strong style="color:var(--parchment-soft);">Amount:</strong> <span data-mc="fee">₹99</span>
     </p>
   </div>
 </section>
@@ -179,5 +348,38 @@
 
 </div>
 </div>
+
+<!-- ═════════════════════════════════════════════════════════════════════
+     Configurable-date injection. Reads window.MASTERCLASS above
+     and updates every element marked data-mc="..." or data-mc-attr="..."
+     ═════════════════════════════════════════════════════════════════════ -->
+<script>
+  (function() {
+    var mc = window.MASTERCLASS || {};
+    // Text content for any element with data-mc="key"
+    document.querySelectorAll('[data-mc]').forEach(function(el) {
+      var key = el.getAttribute('data-mc');
+      if (mc[key] !== undefined && mc[key] !== null) {
+        el.textContent = mc[key];
+      }
+    });
+    // Attribute updates via data-mc-attr="attrName:configKey"
+    document.querySelectorAll('[data-mc-attr]').forEach(function(el) {
+      var pair = el.getAttribute('data-mc-attr').split(':');
+      if (pair.length === 2 && mc[pair[1]] !== undefined) {
+        el.setAttribute(pair[0], mc[pair[1]]);
+      }
+    });
+    // Also update <meta name="description"> with the current date
+    var meta = document.querySelector('meta[name="description"]');
+    if (meta && mc.dateDisplay) {
+      meta.setAttribute('content',
+        "A two-hour live masterclass with Sonali Dutta on healing through poetry and the art of discernment — learning when to yield, when to stand, and when to walk away. " +
+        mc.dateDisplay + ", " + (mc.timeIST || "")
+      );
+    }
+  })();
+</script>
+
 </body>
 </html>
